@@ -3,31 +3,29 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ask Talal — AI Agent</title>
+  <title>Talal Noor — AI Engineer</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <div class="bg-glow"></div>
+  <div class="bg-wash"></div>
 
   <header class="hero">
-    <div class="hero-content">
-      <p class="eyebrow">// personal agent</p>
-      <h1>Ask <span class="accent">Talal</span></h1>
-      <p class="subtitle">
-        An AI agent trained on my projects, skills, and experience.
-        Ask it anything you'd ask me in an interview.
-      </p>
-      <div class="hero-links">
-        <a href="https://github.com/talalnoor" target="_blank" rel="noopener">GitHub</a>
-        <a href="https://talalnoor.github.io" target="_blank" rel="noopener">Portfolio</a>
-      </div>
+    <p class="eyebrow">AI Engineer · ML · LLMs · Automation</p>
+    <h1>Talal <span class="accent">Noor</span></h1>
+    <p class="subtitle">
+      Building intelligent systems that turn data, models, and automation
+      into useful products. This page runs an agent trained on my work —
+      ask it anything you'd ask me in an interview.
+    </p>
+    <div class="hero-links">
+      <a href="https://github.com/talalnoor" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://talalnoor.github.io" target="_blank" rel="noopener">Portfolio</a>
     </div>
   </header>
 
   <main class="chat-section">
 
-    <!-- LOGIN CARD -->
     <div class="login-card" id="login-card">
       <h2>Before we chat</h2>
       <p class="login-sub">Tell me who you are so I know who I'm talking to.</p>
@@ -36,10 +34,9 @@
         <input type="email" id="login-email" placeholder="Your email" required autocomplete="email" />
         <button type="submit" id="login-btn">Start chatting</button>
       </form>
-      <p class="login-note">No password needed — just used so I know who visited 👋</p>
+      <p class="login-note">No password needed — just used so I know who visited.</p>
     </div>
 
-    <!-- CHAT WINDOW (hidden until logged in) -->
     <div class="chat-window" id="chat-window" style="display:none;">
       <div class="chat-messages" id="chat-messages"></div>
 
@@ -63,6 +60,24 @@
     </div>
 
   </main>
+
+  <section class="work-section">
+    <p class="work-label">Selected work</p>
+    <div class="work-list">
+      <a class="work-item" href="https://github.com/talalnoor/ai-job-intelligence" target="_blank" rel="noopener">
+        <span class="work-title">AI JOB INTELLIGENCE</span>
+        <span class="work-desc">Resume analysis & semantic job matching</span>
+      </a>
+      <a class="work-item" href="https://github.com/talalnoor" target="_blank" rel="noopener">
+        <span class="work-title">RASTA</span>
+        <span class="work-desc">AI medical triage assistant</span>
+      </a>
+      <a class="work-item" href="https://talalnoor.github.io" target="_blank" rel="noopener">
+        <span class="work-title">TELCO CHURN PREDICTION</span>
+        <span class="work-desc">End-to-end machine learning pipeline</span>
+      </a>
+    </div>
+  </section>
 
   <footer>
     <p>Built by Talal Noor · FastAPI + Groq · <a href="https://github.com/talalnoor" target="_blank" rel="noopener">source</a></p>
