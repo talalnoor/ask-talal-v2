@@ -1,6 +1,6 @@
 // IMPORTANT: Replace this with your deployed backend URL once you deploy to Railway.
 // Example: "https://ask-talal-production.up.railway.app"
-const BACKEND_URL = "http://localhost:8000";
+const BACKEND_URL = ask-talal-v2-production.up.railway.app;
 
 const loginCard = document.getElementById("login-card");
 const loginForm = document.getElementById("login-form");
