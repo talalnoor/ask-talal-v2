@@ -8,6 +8,8 @@
 </head>
 <body>
 
+  <div class="bg-glow"></div>
+
   <header class="hero">
     <div class="hero-content">
       <p class="eyebrow">// personal agent</p>
@@ -24,13 +26,30 @@
   </header>
 
   <main class="chat-section">
-    <div class="chat-window" id="chat-window">
-      <div class="chat-messages" id="chat-messages">
-        <div class="message agent">
-          Hi, I'm Talal's AI agent 👋 Ask me about my projects, skills, or experience —
-          try "What has Talal built with FastAPI?" or "Tell me about Rasta."
-        </div>
+
+    <!-- LOGIN CARD -->
+    <div class="login-card" id="login-card">
+      <h2>Before we chat</h2>
+      <p class="login-sub">Tell me who you are so I know who I'm talking to.</p>
+      <form id="login-form">
+        <input type="text" id="login-name" placeholder="Your name" required autocomplete="name" />
+        <input type="email" id="login-email" placeholder="Your email" required autocomplete="email" />
+        <button type="submit" id="login-btn">Start chatting</button>
+      </form>
+      <p class="login-note">No password needed — just used so I know who visited 👋</p>
+    </div>
+
+    <!-- CHAT WINDOW (hidden until logged in) -->
+    <div class="chat-window" id="chat-window" style="display:none;">
+      <div class="chat-messages" id="chat-messages"></div>
+
+      <div class="chip-row" id="chip-row">
+        <button class="chip" data-q="What has Talal built with FastAPI?">FastAPI projects</button>
+        <button class="chip" data-q="Tell me about Rasta.">Tell me about Rasta</button>
+        <button class="chip" data-q="What are Talal's strongest skills?">Strongest skills</button>
+        <button class="chip" data-q="Is Talal currently interning anywhere?">Current internships</button>
       </div>
+
       <form id="chat-form" class="chat-input-row">
         <input
           type="text"
@@ -42,6 +61,7 @@
         <button type="submit" id="send-btn">Send</button>
       </form>
     </div>
+
   </main>
 
   <footer>

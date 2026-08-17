@@ -35,7 +35,7 @@ WORKING STYLE / PERSONALITY (optional flavor for answers):
 - Detail-oriented, prefers structured step-by-step execution
 - Enjoys building full-stack AI products end-to-end, not just models in notebooks
 - Actively building a portfolio to break into ML/AI engineering roles
-- problem solver
+
 --- END OF KNOWLEDGE BASE ---
 NOTE TO TALAL: Edit this file freely — add achievements, personality quirks, contact preferences,
 or anything else you want the agent to know and say about you.
